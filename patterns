@@ -1,1 +1,189 @@
 
+
+
+---
+
+## 🟩 Pattern 1: Solid Square
+
+```
+****
+****
+****
+****
+```
+
+### ✅ Code:
+
+```java
+class Main {
+    public static void main(String[] args) {
+        int n = 4; // number of rows and columns
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 🟩 Pattern 2: Hollow Square
+
+```
+****
+*  *
+*  *
+****
+```
+
+### ✅ Code:
+
+```java
+class Main {
+    public static void main(String[] args) {
+        int n = 4;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 🟩 Pattern 3: Right-Aligned Solid Square
+
+```
+    ****
+   ****
+  ****
+ ****
+```
+
+### ✅ Code:
+
+```java
+class Main {
+    public static void main(String[] args) {
+        int n = 4;
+
+        for (int i = 0; i < n; i++) {
+            for (int s = n - i - 1; s > 0; s--) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 🟩 Pattern 4: Repeating `*-*-*`
+
+```
+*-*-*
+*-*-*
+*-*-*
+```
+
+### ✅ Code:
+
+```java
+class Main {
+    public static void main(String[] args) {
+        int rows = 3;
+        int cols = 5; // pattern repeats 5 columns (*-*-*)
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (j % 2 == 0)
+                    System.out.print("*");
+                else
+                    System.out.print("-");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 🟩 Pattern 5: Large Hollow Rectangle
+
+```
+**********
+*        *
+*        *
+**********
+```
+
+### ✅ Code:
+
+```java
+class Main {
+    public static void main(String[] args) {
+        int rows = 4;
+        int cols = 10;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 🟩 Pattern 6: Rectangle with Top and Bottom Borders Only
+
+```
+***
+*  *
+*  *
+*  *
+***
+```
+
+### ✅ Code:
+
+```java
+class Main {
+    public static void main(String[] args) {
+        int rows = 5;
+        int cols = 3;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
