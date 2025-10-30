@@ -10,3 +10,4 @@ for(){
 => for(){
 }
 => we consider two inner loops as o(n) and outer as o(n) so total complexity is o(n^2) 
+order : o(n^2)>o(n)>o(logn)>o(1)
