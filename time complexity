@@ -1,0 +1,12 @@
+=> O(1)=directly we get ans ,in first attempt 
+=> o(n): we get target from i to n ,n is target ,like for loop
+=> o(n^2): if we use double for loops 
+=> o(logn): we start at middle =binary search 
+=> if there is o(n)+o(n^2)in one code we will take big one so the time complexity is o(n^2) 
+=> if there if
+for(){
+  for(){
+}
+=> for(){
+}
+=> we consider two inner loops as o(n) and outer as o(n) so total complexity is o(n^2) 
