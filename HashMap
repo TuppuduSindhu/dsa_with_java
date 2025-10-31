@@ -47,6 +47,28 @@ class Main {
         }
     }
 }
-
-
+///now solve for string array find how many times each string is repeated in a array
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        
+        HashMap<String,Integer>macha=new HashMap<>();
+        String[] arr={"hi","hello","hey"};
+        for(int i=0;i<arr.length;i++){
+            String n=arr[i];
+            if(macha.containsKey(n)){
+                int prev=macha.get(n);
+                macha.put(n,prev+1);
+                
+            }
+            else{
+                macha.put(n,1);
+            }
+        }
+        for(String a:macha.keySet()){
+            System.out.println(a+" "+macha.get(a));
+        }
+        
+    }
+}
 
