@@ -1,0 +1,17 @@
+1. int=> int n=sc.nextInt();
+2. String=> String s=sc.nextLine();
+3. array with integers => int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+        }
+
+
+4. array with strings=>
+String[] arr=new int[n];
+for(int i=0;i<n;i++){
+arr[i]=sc.nextLine();//to print string in next line 
+arr[i]=sc.next()//to print string aside to n 
+
+}
+
+5. sc.close(); //we are not using sc any more after this so we use it after code 
