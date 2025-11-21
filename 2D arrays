@@ -13,3 +13,17 @@ class Main {
         }
     }
 }
+
+
+---
+/// question : only print 1st row of the given matrix
+class Main {
+    public static void main(String[] args) {
+        int[][] arr={{1,2},{2,3},{3,4}};
+        int r=arr.length;
+        int c=arr[0].length;
+        for(int i=0;i<c;i++){
+            System.out.print(arr[0][i]); //here we are keeping upto c that means rows will go untill c is stopped and we are printing arr[0][i] because arr[0] means row was always 0 and i is iterating 
+        }
+        }
+    }
