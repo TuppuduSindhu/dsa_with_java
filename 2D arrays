@@ -27,3 +27,5 @@ class Main {
         }
         }
     }
+
+//same for printing only second row we need to keep like System.out.println(arr[1][i] thats it 
