@@ -60,3 +60,21 @@ class Main {
         }
     }
 
+/////without any for loop we can do it by while loop
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        int[][] arr={{1,2,3},{4,5,6},{7,8,9}};
+        int r=arr.length;
+        int c=arr[0].length;
+       int i=0;
+       int j=0;
+        while( i<r && j<c){
+            System.out.println(arr[i][j]);
+            i+=1;
+            j+=1;
+        }
+        }
+    }
